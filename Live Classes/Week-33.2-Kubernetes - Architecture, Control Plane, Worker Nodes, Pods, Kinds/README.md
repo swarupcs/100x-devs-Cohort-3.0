@@ -18,3 +18,16 @@ k gets pods -w
 k describe pod ngnix
 
 k logs podname
+
+
+## manifest configuration
+
+manifest.yml
+
+
+k create ngnix --image=ngnix --port=80
+k apply -f manifest.yml
+
+k get pods
+
+k delete pod ngnix
